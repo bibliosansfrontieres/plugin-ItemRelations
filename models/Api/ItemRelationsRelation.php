@@ -11,7 +11,8 @@ class Api_ItemRelationsRelation extends Omeka_Record_Api_AbstractRecordAdapter
             'id' => $record->id,
             'subject_item_id' => $record->subject_item_id,
             'property_id' => $record->property_id,
-            'object_item_id' => $record->object_item_id
+            'object_item_id' => $record->object_item_id,
+            'property_text' => $record->getPropertyText()
         );
 
         return $representation;
