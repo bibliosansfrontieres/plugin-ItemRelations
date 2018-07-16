@@ -451,7 +451,8 @@ class ItemRelationsPlugin extends Omeka_Plugin_AbstractPlugin
         $apiResources['item_relations'] = array(
             'module' => 'Item Relations',
             'record_type' => 'ItemRelationsRelation',
-            'actions' => array('get', 'index')
+            'actions' => array('get', 'index'),
+            'index_params' => array('subject_item_id')
         );
         return $apiResources;
     }
